@@ -1,0 +1,9 @@
+service:
+  port: ":9999"
+
+database:
+  dataSourceName: "postgres://admin:hebat@localhost:5432/zd_music_catalog_db?sslmode=disable"
+
+spotifyConfig:
+  clientID: ""
+  clientSecret: ""
