@@ -1,0 +1,16 @@
+version: '3'
+services:
+  db:
+    image: postgres:latest
+    container_name: zd_music_catalog
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: hebat
+      POSTGRES_DB: zd_music_catalog_db
+    volumes:
+      - zd_music_catalog_volumes:/var/lib/postgresql/
+      
+volumes:
+  zd_music_catalog_volumes:
